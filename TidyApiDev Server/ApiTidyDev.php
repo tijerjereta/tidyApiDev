@@ -2,7 +2,6 @@
 /*
 Template Name: Tidy Api Call
 Description: this is a custom page template which will use a third party API
-  to pull a list of up to 100 items released on Netflix within the last 7 days.
 */
 //This is used to tell the API what we want to retrieve
 if ( is_plugin_active('TidyStockApi/TidyStockApi.php') ) {
