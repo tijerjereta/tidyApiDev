@@ -9,9 +9,7 @@ if ( is_plugin_active('TidyStockApi/TidyStockApi.php') ) {
 //  function cronJobBene( $mensaje ) {	
       $curl = curl_init();
       curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://benefootwear3.tidystock.com//api/materialitems?IncludeImages=True&IncludePricing=True&pagesize=2000",
-                      //https://benefootwear3.tidystock.com//api/materialitems?IncludeImages=True
-                      //api/users?pagesize=2&page=2&ismaterialwriter=true'
+        CURLOPT_URL => "https://user.tidystock.com/",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_ENCODING => "",
@@ -21,9 +19,8 @@ if ( is_plugin_active('TidyStockApi/TidyStockApi.php') ) {
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_HTTPHEADER => array(
-          "host: benefootwear3.tidystock.com",
-          "Authorization: Basic UGYrMlFsQ2FLa2pzaTBHemsyb29tTWo4cFB5Ti94K1FscWwxajM1VjNPUT06"                  
-        //   "u: 5peEHsF40xvlZrX6ILg9EDpTztPPeYu8d4WJ5jpRde0=ftyygyytfgfyt"
+          "host: user.tidystock.com",
+          "Authorization: Basic xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"                  
         ),     
       ));
       set_time_limit(0);
